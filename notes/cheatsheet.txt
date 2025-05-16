@@ -1,0 +1,1 @@
+grep -i "alias" ~/termux-lab/notes/*.txt  -searches all text files for specific word(alias is the placeholder)

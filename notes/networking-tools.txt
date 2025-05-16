@@ -1,0 +1,17 @@
+# Networking & CCNA Tools
+
+# Check IP
+ip addr
+ifconfig
+
+# Scan open ports
+nmap -p- 192.168.0.1
+
+# Ping a device
+ping google.com
+
+# Whois lookup
+whois example.com
+
+# DNS info
+nslookup google.com

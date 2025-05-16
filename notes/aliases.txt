@@ -1,0 +1,64 @@
+alias home='cd ~'
+alias lab='cd ~/termux-lab'
+alias bots='cd ~/termux-lab/bots'
+alias scripts='cd ~/termux-lab/scripts'
+alias tools='cd ~/termux-lab/tools'
+alias logs='cd ~/termux-lab/logs'
+alias notes='cd ~/termux-lab/notes'
+alias downloads='cd ~/storage/downloads'
+alias shared='cd ~/storage/shared'
+
+
+alias cls='clear'
+alias reload='source ~/.bashrc'
+alias update='pkg update && pkg upgrade -y'
+alias install='pkg install'
+alias python3='python'
+alias pip='pip3'
+
+
+alias runbot='python ~/termux-lab/bots/mybot.py'
+alias newbot='nano ~/termux-lab/bots/new_bot.py'
+alias newscript='nano ~/termux-lab/scripts/script.py'
+alias runlast='python $(ls -t ~/termux-lab/bots | head -1)'
+
+
+alias ip='ip a'
+alias myip='curl ifconfig.me'
+alias scanme='nmap -T4 -F'
+
+alias z='zip'
+alias uz='unzip'
+alias mkd='mkdir'
+alias del='rm -rf'
+alias ls='ls --color=auto'
+alias ll='ls -la'
+
+alias cam='termux-camera-photo -c 0 -o pic.jpg'
+alias battery='termux-battery-status'
+alias sms='termux-sms-inbox'
+alias notif='termux-notification --title "Yo Rick" --content "Time to grind"'
+
+alias hello='echo "Wagwan Rick 😎"'
+alias system='neofetch'
+alias gg='git clone'
+alias testnet='cd ~/termux-lab/testnet'
+
+alias warn='echo "Careful chief ⚠️"'
+alias bruh='echo "Something’s off... double check!"'
+
+alias rc='nano ~/.bashrc'
+alias rcall='nano ~/.bashrc && source ~/.bashrc'
+
+alias bashup='echo "Reloading Bash config..." && source ~/.bashrc'
+
+
+# Note shortcuts
+alias nnotes='cd ~/termux-lab/notes'
+alias bashnotes='nano ~/termux-lab/notes/bashrc-cheatsheet.txt'
+alias tcmds='nano ~/termux-lab/notes/termux-commands.txt'
+alias pnotes='nano ~/termux-lab/notes/python-basics.txt'
+alias netsheet='nano ~/termux-lab/notes/networking-tools.txt'
+alias idealist='nano ~/termux-lab/notes/project-ideas.md'
+alias logbook='nano ~/termux-lab/notes/scripts-log.txt'
+alias trades='nano ~/termux-lab/notes/trading-notes.md'
