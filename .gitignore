@@ -1,0 +1,39 @@
+# === Core Git ignores ===
+*.log                # Log files
+*.pyc                # Python compiled files
+*.pyo
+__pycache__/         # Python cache folders
+
+# === Scripts & bots ===
+bots/__pycache__/
+scripts/__pycache__/
+
+# === Environment files ===
+.env                 # Environment variables (secrets)
+.env.*               # Variants like .env.dev, .env.local
+
+# === Backup or temp files ===
+*.bak
+*~
+*.swp                # vim swap files
+.DS_Store            # macOS junk
+Thumbs.db            # Windows junk
+
+# === Custom folders to ignore ===
+secrets/             # Sensitive or secret data
+storage/             # Local Termux storage mount
+logs/                # Log folder
+*.sqlite3            # Local databases
+
+# === Termux specific ===
+.termux/             # Termux settings
+termux-api           # Local Termux binaries
+
+# === Git itself ===
+.gitignore           # You can remove this line if you want it visible
+.gitsync.sh          # Custom scripts you don’t want online (optional)
+
+# === OS / Editor noise ===
+.vscode/             # VS Code settings
+.idea/               # JetBrains IDEs
+*.code-workspace     # VSCode project files
