@@ -1,6 +1,0 @@
-# List of Scripts
-
-[bot1.py] - Basic price fetcher from CoinGecko
-[ping-sweep.sh] - Bash script to scan IP range
-[reminder.sh] - Toast notification every X mins
-[sync-notes.sh] - Backup notes folder to GitHub
