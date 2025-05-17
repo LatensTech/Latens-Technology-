@@ -16,8 +16,8 @@ logs/                # Log folder
 # === Custom folders or scripts to ignore ===
 secrets/             # Sensitive or secret data
 storage/             # Local Termux storage mount
-storage-links/       # Symlinks to Termux storage
-~/latens-lab/gitsync.sh           # Local/private sync script
+storage-links/       # Symlinks to Termux stor
+gitsync.sh           # Local/private sync script
 
 # === Termux specific ===
 .termux/             # Termux settings
