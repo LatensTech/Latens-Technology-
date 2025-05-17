@@ -4,7 +4,7 @@ cd ~/latens-lab || exit
 
 echo "🔄 Syncing with GitHub..."
 
-git pull origin main
+git pull origin Master
 
 git add .
 
@@ -13,6 +13,6 @@ read msg
 
 git commit -m "$msg"
 
-git push origin main
+git push origin Master
 
 echo "✅ Sync complete!"
