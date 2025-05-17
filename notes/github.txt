@@ -1,0 +1,14 @@
+git clone URL            # Get repo to your device
+git add file.py          # Stage a file for commit
+git commit -m "message"  # Save snapshot of changes
+git push                 # Upload changes to GitHub
+git pull                 # Download updates
+
+
+📌 Explanation of Each Command:
+
+git add . — tells Git to track all new/modified files.
+
+git commit -m "..." — saves a snapshot of those changes.
+
+git push origin main — sends the snapshot to your GitHub repo.

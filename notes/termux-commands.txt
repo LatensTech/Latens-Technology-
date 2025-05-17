@@ -1,0 +1,129 @@
+# Useful Termux + Termux API commands
+
+termux-setup-storage         # Ask permission for file access
+termux-battery-status        # Show battery info
+termux-telephony-deviceinfo  # SIM info
+termux-location              # Get device GPS
+termux-sensor                # Access hardware sensors
+
+termux-camera-photo -c 0 -o pic.jpg  # Take photo with back cam
+termux-vibrate                # Vibrate device
+termux-toast "Message here"  # Show pop-up toast
+
+
+# Change directory
+cd <directory>             # Move into a folder
+cd ..                      # Move up one directory
+cd ~                       # Go to home directory
+
+# List files
+ls                         # Basic list
+ls -l                      # Long listing with details
+ls -a                      # Show hidden files
+
+# Show current directory
+pwd
+
+# Create folder/file
+mkdir <folder>             # Make directory
+touch <file>               # Create empty file
+
+# Remove file/folder
+rm <file>                  # Delete file
+rm -r <folder>             # Delete folder and contents
+
+# Rename or move
+mv <old> <new>             # Move/rename file or folder
+
+# Copy files/folders
+cp <file> <dest>           # Copy file
+cp -r <folder> <dest>      # Copy folder
+
+# View file contents
+cat <file>
+nano <file>                # Edit file
+
+# Clear terminal
+clear
+
+# System info
+neofetch                   # Show device/system info
+uname -a                   # OS & kernel version
+
+# Show processes
+top                        # Real-time processes
+ps aux                     # All processes
+
+# Kill a process
+kill <pid>
+pkill <name>
+
+pkg update                 # Update package list
+pkg upgrade                # Upgrade installed packages
+pkg install <package>      # Install a package (e.g., git, python)
+pkg uninstall <package>    # Remove a package
+
+# Alternative: apt (advanced)
+apt install <package>
+
+# Make script executable
+chmod +x <file.py>         # Give execute permission
+
+# Check file permissions
+ls -l
+
+# Run script
+python <script.py>
+
+# Example hello world script
+nano hello.py
+# Paste:
+# print("Hello, Rick!")
+
+chmod +x hello.py
+python hello.py
+
+ping <host>                # Test network connection
+wget <url>                 # Download file
+curl <url>                 # Fetch web resource
+nmap <ip>                  # Scan ports on IP
+netstat -tuln              # Active listening ports
+
+# Edit cron jobs
+crontab -e
+
+# Example job: run every 6 hours
+# */360 * * * * /data/data/com.termux/files/home/scripts/btc_price.py
+
+# Start cron (install 'cronie' first)
+crond
+
+termux-setup-storage         # Grant storage access
+termux-toast "Yo Rick!"      # Popup message
+termux-notification --title "BTC Alert" --content "Price checked!"
+termux-battery-status        # Show battery info
+termux-camera-photo -c 0 pic.jpg   # Take photo
+termux-clipboard-set <text>        # Copy to clipboard
+
+nano ~/.bashrc               # Open bashrc
+# Add alias:
+alias ll='ls -la'
+alias gpy='python ~/scripts/'
+
+# Reload bashrc
+source ~/.bashrc
+
+# Syntax Placeholders
+<file>       = any file name (e.g. notes.txt)
+<folder>     = directory name (e.g. scripts/)
+<url>        = full link (e.g. https://example.com)
+<package>    = package name (e.g. git, python)
+<pid>        = process ID number
+<name>       = process or script name (e.g. cron, python)
+<text>       = any string value
+
+mkdir -p ~/notes
+nano ~/notes/termux_command_key.txt
+# Paste all this into the file
+
+
