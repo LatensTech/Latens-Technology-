@@ -1,0 +1,46 @@
+# === Core Git ignores ===
+*.log                # Log files
+*.pyc                # Python compiled files
+*.pyo
+*.pyd
+__pycache__/         # Python cache folders
+
+# === Environment files ===
+.env                 # Env vars (never push secrets)
+.env.*               # Variants like .env.dev, .env.local
+
+# === Logs and debug ===
+logs/                # Log folder
+*.log
+
+# === Custom folders or scripts to ignore ===
+secrets/             # Sensitive or secret data
+storage/             # Local Termux storage mount
+storage-links/       # Symlinks to Termux storage
+gitsync.sh           # Local/private sync script
+
+# === Termux specific ===
+.termux/             # Termux settings
+termux-api           # Local Termux binaries
+
+# === Editor & OS junk ===
+.DS_Store            # macOS system files
+Thumbs.db            # Windows system files
+.vscode/             # VS Code project settings
+.idea/               # JetBrains project settings
+*.code-workspace     # VSCode workspace files
+
+# === Backup or temp files ===
+*.bak
+*~
+*.swp                # Vim/NeoVim swap files
+
+# === Optional folders you might want to ignore ===
+# notes/             # Uncomment if notes are private
+# testnet/           # Uncomment if local-only
+# tools/             # Uncomment if local-only
+# latenscripts/      # Uncomment if local-only
+
+# === Python junk from scripts or bots ===
+bots/__pycache__/
+scripts/__pycache__/
