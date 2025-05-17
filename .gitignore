@@ -2,38 +2,45 @@
 *.log                # Log files
 *.pyc                # Python compiled files
 *.pyo
+*.pyd
 __pycache__/         # Python cache folders
 
-# === Scripts & bots ===
-bots/__pycache__/
-scripts/__pycache__/
-
 # === Environment files ===
-.env                 # Environment variables (secrets)
+.env                 # Env vars (never push secrets)
 .env.*               # Variants like .env.dev, .env.local
 
-# === Backup or temp files ===
-*.bak
-*~
-*.swp                # vim swap files
-.DS_Store            # macOS junk
-Thumbs.db            # Windows junk
+# === Logs and debug ===
+logs/                # Log folder
+*.log
 
-# === Custom folders to ignore ===
+# === Custom folders or scripts to ignore ===
 secrets/             # Sensitive or secret data
 storage/             # Local Termux storage mount
-logs/                # Log folder
-*.sqlite3            # Local databases
+storage-links/       # Symlinks to Termux storage
+gitsync.sh           # Local/private sync script
 
 # === Termux specific ===
 .termux/             # Termux settings
 termux-api           # Local Termux binaries
 
-# === Git itself ===
-.gitignore           # You can remove this line if you want it visible
-.gitsync.sh          # Custom scripts you don’t want online (optional)
+# === Editor & OS junk ===
+.DS_Store            # macOS system files
+Thumbs.db            # Windows system files
+.vscode/             # VS Code project settings
+.idea/               # JetBrains project settings
+*.code-workspace     # VSCode workspace files
 
-# === OS / Editor noise ===
-.vscode/             # VS Code settings
-.idea/               # JetBrains IDEs
-*.code-workspace     # VSCode project files
+# === Backup or temp files ===
+*.bak
+*~
+*.swp                # Vim/NeoVim swap files
+
+# === Optional folders you might want to ignore ===
+# notes/             # Uncomment if notes are private
+# testnet/           # Uncomment if local-only
+# tools/             # Uncomment if local-only
+# latenscripts/      # Uncomment if local-only
+
+# === Python junk from scripts or bots ===
+bots/__pycache__/
+scripts/__pycache__/
