@@ -13,7 +13,7 @@
 1. Clone the repo:
 
    ```bash
-   git clone https://github.com/yourname/Universe.git
+   git clone https://github.com/LatensTech/Universe.git
    cd Universe
 
 2. Run the install script:
