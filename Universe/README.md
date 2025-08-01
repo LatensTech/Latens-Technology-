@@ -5,7 +5,7 @@
 ## 📦 What’s Inside?
 
 - `secrets.py` – Python script that sends a quote using Termux notification.
-- `dailysecrets.txt` – A file with 100+ motivational quotes.
+- `dailysecrets.txt` – A file with 100+ secrets from the universe.
 - `install.sh` – One-click setup script that configures everything.
 
 ## ⚙️ Installation
